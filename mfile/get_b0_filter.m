@@ -3,8 +3,8 @@ function weights = get_b0_filter(Nx, Ny)
 w_fB0 = 64;  % 32 in BART?
 h_fB0 = 8;   % Sobolev index for B0 field inhomogeneity
 weights = zeros(Nx, Ny, 'single');
-for idx2 = 1:Nx
-    for idx1 = 1:Ny
+for idx1 = 1:Nx
+    for idx2 = 1:Ny
         %------------------------------------------------------------------
         % Calculate the k-space weight for B0 field inhomogeneity
         %------------------------------------------------------------------
