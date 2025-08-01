@@ -18,7 +18,7 @@ mask_run(mask_) = true;
 
 for ii = r1+1:max(mask(:))
     mask_ = mask == ii;
-    [yy, xx] = find(mask_);
+    [xx, yy] = find(mask_);
     n = length(xx);
     fm_temp = zeros(sx, sy);
     for jj = 1:n
